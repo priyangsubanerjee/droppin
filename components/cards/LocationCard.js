@@ -52,7 +52,7 @@ function LocationCard({ location, locations, setLocations }) {
 
       <div className="flex items-center mt-3">
         <a
-          href={`https://maps.google.com/?q=${location.lat},${location.lng}`}
+          href={`https://maps.google.com/?q=${location.latitude},${location.longitude}`}
           target="_blank"
           rel="noopener noreferrer"
           className="text-xs flex items-center justify-center w-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white h-8 rounded transition-all"
