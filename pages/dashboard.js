@@ -95,9 +95,10 @@ function DashBoard() {
       </div>
       <div className="p-0 lg:p-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-0 lg:gap-4">
         {locations &&
-          locations.map((location) => {
+          locations.map((location, index) => {
             return (
               <LocationCard
+                key={index}
                 locations={locations}
                 setLocations={setLocations}
                 location={location}
