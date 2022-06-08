@@ -47,7 +47,9 @@ function LocationCard({ location, locations, setLocations }) {
         </div>
       </details>
       <div className=" overflow-hidden rounded-sm mt-3">
-        <img src="https://api.mapbox.com/styles/v1/mapbox/light-v9/static/pin-s+f00(87.287643,23.550151)/87.287643,23.550151,16,0,0/640x350?access_token=pk.eyJ1Ijoibmlja2ZpdHoiLCJhIjoiY2p3d2g3N2F5MDZ4azQwcG12dWticDB0diJ9.qnQV5QgYN_eDwg4uUdbO6Q" />
+        <img
+          src={`https://api.mapbox.com/styles/v1/mapbox/light-v9/static/pin-s+f00(${location.longitude},${location.latitude})/${location.longitude},${location.latitude},16,0,0/640x350?access_token=pk.eyJ1Ijoibmlja2ZpdHoiLCJhIjoiY2p3d2g3N2F5MDZ4azQwcG12dWticDB0diJ9.qnQV5QgYN_eDwg4uUdbO6Q`}
+        />
       </div>
 
       <div className="flex items-center mt-3">
