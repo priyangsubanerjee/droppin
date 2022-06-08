@@ -13,7 +13,7 @@ import {
   BsX,
 } from "react-icons/bs";
 
-function home() {
+function DashBoard() {
   const [profile, setProfile] = useState(false);
   const [location, setLocation] = useState({
     title: "",
@@ -319,4 +319,4 @@ function home() {
   );
 }
 
-export default home;
+export default DashBoard;
